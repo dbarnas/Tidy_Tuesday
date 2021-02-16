@@ -1,3 +1,3 @@
 # Tidy Tuesday
 
-## Scripts and plots from each new week's Tidy Tuesday data!
+Weekly data analysis and visualization using the [R for Data Science Tidy Tuesday repository](https://github.com/rfordatascience/tidytuesday)
