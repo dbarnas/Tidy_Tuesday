@@ -5,6 +5,7 @@ Weekly data analysis and visualization using the [R for Data Science Tidy Tuesda
 ### 2021
 
 [Week 7](2021_Week7)  
+[Week 8](2021_Week8)  
 
 ### 2020
 
