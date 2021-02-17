@@ -6,6 +6,7 @@
 ### Libraries ###
 library(tidyverse)
 library(tidytuesdayR)
+library(here)
 library(PNWColors)
 
 ### Bring in Data ###
@@ -54,7 +55,8 @@ ggplot(data = long_census,
              size = 5,
              hjust = c(1.2, 1.2, 1.2, 1.2, 2),
              vjust = c(0.5, 0, 0, -1.2, -0.5)) +
-  theme_bw() # black-white theme
+  theme_bw() + # black-white theme
+  ggsave(here("2021_Week8","Output","demographics.pdf"),width = 15, height = 15)
 
 
 
