@@ -6,7 +6,12 @@
 ### Libraries ###
 library(tidyverse)
 library(tidytuesdayR)
+library(here)
+library(plotly)
+library(scales)
+library(htmlwidgets)
 
+rm(list=ls())
 
 ### Bring in Data ###
 tuesdata <- tt_load(2021, week = 7)
@@ -27,23 +32,25 @@ income_mean <- tuesdata$income_mean
 glimpse(race_wealth)
 View(race_wealth)
 
-ggplot(data=race_wealth,
-       aes(x=year,
-           y=wealth_family,
-           color=race,
-           fill=race)) +
-  geom_bar(stat="identity",
-           position="dodge",
-           color="black") + 
-  labs(color="Race",
-       x="Year",
-       y="Average Family Wealth per Year") + 
+race_wealth %>% 
+  ggplot(aes(x=year, y=wealth_family,
+             color=race, fill=race)) +
+  geom_bar(stat="identity", position="dodge", aes(color = race)) + 
+  labs(color="Race", fill = "Race",
+       x="Year", y="Average Family Wealth per Year") + 
   theme_bw()
-  
 
 
-
-
+p1<-race_wealth %>% 
+  plot_ly(x=~year, y=~wealth_family,
+          color=~race, fill=~race,
+          type = "bar",
+          text = ~paste0("Annual Family Income: $", # customize hover label text
+                        comma(round(wealth_family),decimals = 2)),
+          hovertemplate = paste('%{text}')) %>% 
+  layout(title = "Annual Family Income", #change plot title
+         xaxis = list(title = "Year"), #change x-axis title
+         yaxis = list(title = "Annual Income (USD)")) #change y-axis title
 
 
 
