@@ -122,7 +122,7 @@ p3<-area_oil %>%
 
 p1 + annotation_custom(ggplotGrob(p3), xmin = 1989, xmax = 2003, 
                        ymin = 57000000, ymax = 98000000) +
-  ggsave(here("2021_Week15","Output","Figure3.pdf"), width = 7, height = 7)
+  ggsave(here("2021_Week15","Output","Figure3.png"), width = 7, height = 7)
 
 
 
