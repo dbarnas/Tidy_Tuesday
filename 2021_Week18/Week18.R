@@ -54,8 +54,8 @@ departure_text<-departures %>%
 ### Plotting ###
 
 # color palettes
-pal2<-c("#56135a", "#dd9933")
-pal4<-c("#67074e", "#075c56", "#461767", "#05878a")
+pal2<-c("#56135a", "#05878a")
+pal4<-c("#dd9933", "#075c56", "#56135a", "#05878a")
 
 p1<-involuntary %>% 
   ggplot(aes(x = year_gone, fill = code)) +
