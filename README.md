@@ -2,6 +2,11 @@
 
 Weekly data analysis and visualization using the [R for Data Science Tidy Tuesday repository](https://github.com/rfordatascience/tidytuesday)
 
+### 2022
+
+[week 4 Board games](2022_Week4)  
+[week 5 Dog Breeds](2022_Week5)  
+
 ### 2021
 
 **Modeling Class**  
