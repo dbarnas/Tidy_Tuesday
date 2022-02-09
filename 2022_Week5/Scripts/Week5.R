@@ -1,4 +1,4 @@
-### Tidy Tuesday Week 15, 2022
+### Tidy Tuesday Week 5, 2022
 # Created by Danielle Barnas
 # Created on 2022-02-01
 ######################################################
@@ -68,7 +68,7 @@ other<-breed_traits %>%
   filter(!grepl("Spaniel",Breed))
 
 dother<-other %>% distinct(Breed)
-View(dother)
+
 
 sub_breeds <- retriever %>%
   rbind(shepherd,

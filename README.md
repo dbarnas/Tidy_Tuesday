@@ -5,7 +5,8 @@ Weekly data analysis and visualization using the [R for Data Science Tidy Tuesda
 ### 2022
 
 [week 4 Board games](2022_Week4)  
-[week 5 Dog Breeds](2022_Week5)  
+[week 5 Dog Breeds - ggplotly geom_tile](2022_Week5)  
+[week 6 Airmen - ggplotly map](2022_Week6)  
 
 ### 2021
 
